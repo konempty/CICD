@@ -19,9 +19,9 @@ spec:
         app: weit-api
     spec:
       containers:
-        - name: weit-api
-          image: ghcr.io/konempty/temp:latest
+        - image: ghcr.io/konempty/temp:latest
           imagePullPolicy: Always
+          name: weit-api
           resources:
             limits:
               cpu: 500m
