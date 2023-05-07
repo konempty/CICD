@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: weit-api
 spec:
+  selector:
+    matchLabels:
+      app: weit-api
   replicas: 2
   strategy:
     type: RollingUpdate
