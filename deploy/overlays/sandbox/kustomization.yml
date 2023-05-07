@@ -4,12 +4,12 @@ namespace: sandbox
 
 resources:
 - ../../base
-- ./ingress.yaml
+- ./ingress.yml
 
 images:
 - name: ghcr.io/konempty/temp
   newTag: sandbox
 
 patchesStrategicMerge:
-- patch.yaml
-- deployment.yaml
+- patch.yml
+- deployment.yml
