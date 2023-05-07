@@ -8,7 +8,7 @@ resources:
 
 images:
 - name: ghcr.io/konempty/temp
-  newTag: latest
+  newTag: stable
 
 patchesStrategicMerge:
 - patch.yml
