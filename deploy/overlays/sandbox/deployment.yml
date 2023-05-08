@@ -10,19 +10,5 @@ spec:
           env:
             - name: APP_PHASE
               value: sandbox
-                
-          readinessProbe:
-            httpGet:
-              port: 8080
-              path: /ready
-            initialDelaySeconds: 120
-            timeoutSeconds: 5
-          livenessProbe:
-            httpGet:
-              port: 8080
-              path: /health
-            initialDelaySeconds: 150
-            timeoutSeconds: 10
-            failureThreshold: 10
       nodeSelector:
         performance: low
